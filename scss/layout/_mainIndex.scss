@@ -1,0 +1,118 @@
+/**************************PRIMERA SECCION*****************************/
+.primera-seccion{
+    background-image: url(../assets/fondoPrimeraSeccionIndex.png);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    h1{
+        text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.612);
+        text-align: right;
+        margin-top: 450px;
+        margin-bottom: 450px;
+        margin-right: 100px;
+        color: aliceblue;
+        font-size: 4rem;
+    }
+}
+/**************************PRIMERA SECCION*****************************/
+
+/**************************SEGUNDA SECCION*****************************/
+.segundaSeccion{
+    background-image: url(../assets/seccionNoticiasFondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contenedor-de-noticias{
+        background-color: white;
+        width: 1323px;
+        height: 845px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        .daily{
+            display: flex;
+            justify-content: center;
+            margin-top: -100px;
+        }
+        h2{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2rem; /*32px*/
+            font-weight: 600; /*SemiBold*/
+            color: black;
+            text-decoration: underline;
+        }
+        .botonNoticiasIndex{
+            display: flex;
+            justify-content: end;
+            button{
+                background-color: #CA0000;
+                color: white;
+                width: 7.9375rem;
+                height: 2.9375rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                a{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: white;
+                }
+                &:hover{
+                    box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
+                    cursor: pointer;
+                    a{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+/**************************SEGUNDA SECCION*****************************/
+
+/**************************TERCERA SECCION*****************************/
+.terceraSeccion { 
+    background-image: url(../assets/flareParaIronman.jpg);
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    .textoTerceraSeccion{
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-left: 130px;
+        h2{
+            font-size: 50px;
+        }
+        h3{
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        a{
+            button{
+                background-color: #CA0000;
+                color: white;
+                width: 7.9375rem;
+                height: 2.9375rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                margin-top: 30px;
+                &:hover{
+                    box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
+                    cursor:pointer;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
+/**************************TERCERA SECCION*****************************/

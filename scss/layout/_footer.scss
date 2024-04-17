@@ -1,0 +1,19 @@
+footer {
+    background: linear-gradient(#272727,#131313);
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    .FooterCoder1{
+        margin-left: 190px;
+        align-items: center;
+    }
+    .FooterCoder2{
+        display: flex;
+        margin-right: 190px;
+        align-items: center;
+        gap:30px;
+    }
+}

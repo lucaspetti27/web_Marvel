@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    .barNav{
+        display: flex;
+        color: white;
+        height: 4.375rem;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .material-icons {
+            font-size: 45px; 
+        }
+        #toggle, label {
+            display: none;
+        }
+        .Navegador{
+            display: flex;
+            align-items: center;
+            ul{
+                .p-seleccionada{
+                    font-weight: bold;
+                }
+                li{
+                    display: inline-block;
+                    padding-inline: 1.25rem;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
