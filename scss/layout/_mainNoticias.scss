@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4.375rem;
+    padding-top: 84px;
     .contenedor-de-noticias-pagina {
         background-color: white;
         width: 90%;
@@ -14,7 +14,12 @@
         .daily2 {
             display: flex;
             justify-content: center;
-            width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+        .daily936{
+            display: none;
         }
         .subContenedorNoticias{
             display: flex;
@@ -33,6 +38,7 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 align-items: center;
                 gap: 1.25rem;
+                max-width: 100%;
                 article{
                     width: 255px ;
                     height: 540px;

@@ -3,11 +3,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.25rem;
     article{
-        width: 255px ;
+        width: cover;
         height: 540px;
         img{
             box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
-            width: 15.9375rem
+            max-width: 100%;
         }
         h3{
             margin-top: 0.625rem;
