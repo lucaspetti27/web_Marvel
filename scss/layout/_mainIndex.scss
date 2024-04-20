@@ -28,13 +28,12 @@
     align-items: center;
     .contenedor-de-noticias{
         background-color: white;
-        width: 1323px;
-        height: 845px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 100px;
         margin-bottom: 50px;
+        padding: 0px 120px 45px 120px;
         .daily{
             display: flex;
             justify-content: center;
