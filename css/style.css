@@ -77,6 +77,8 @@ a:hover {
   align-items: center; }
   .segundaSeccion .contenedor-de-noticias {
     background-color: white;
+    width: 90%;
+    max-width: 1526px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,35 +89,38 @@ a:hover {
       display: flex;
       justify-content: center;
       margin-top: -100px; }
-    .segundaSeccion .contenedor-de-noticias h2 {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      /*32px*/
-      font-weight: 600;
-      /*SemiBold*/
-      color: black;
-      text-decoration: underline; }
-    .segundaSeccion .contenedor-de-noticias .botonNoticiasIndex {
-      display: flex;
-      justify-content: end; }
-      .segundaSeccion .contenedor-de-noticias .botonNoticiasIndex button {
-        background-color: #CA0000;
-        color: white;
-        width: 7.9375rem;
-        height: 2.9375rem;
-        font-size: 1rem;
+    .segundaSeccion .contenedor-de-noticias .contenedorInterior {
+      width: 80%;
+      max-width: 1080px; }
+      .segundaSeccion .contenedor-de-noticias .contenedorInterior h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        /*32px*/
         font-weight: 600;
-        border: none; }
-        .segundaSeccion .contenedor-de-noticias .botonNoticiasIndex button a {
+        /*SemiBold*/
+        color: black;
+        text-decoration: underline; }
+      .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex {
+        display: flex;
+        justify-content: end; }
+        .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button {
+          background-color: #CA0000;
+          color: white;
+          width: 7.9375rem;
+          height: 2.9375rem;
           font-size: 1rem;
           font-weight: 600;
-          color: white; }
-        .segundaSeccion .contenedor-de-noticias .botonNoticiasIndex button:hover {
-          box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
-          cursor: pointer; }
-          .segundaSeccion .contenedor-de-noticias .botonNoticiasIndex button:hover a {
-            font-weight: bold; }
+          border: none; }
+          .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: white; }
+          .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button:hover {
+            box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
+            cursor: pointer; }
+            .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button:hover a {
+              font-weight: bold; }
 
 /**************************SEGUNDA SECCION*****************************/
 /**************************TERCERA SECCION*****************************/
@@ -155,8 +160,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.25rem; }
   .noticias article {
-    width: cover;
-    height: 540px; }
+    grid-template-columns: minmax(150px, 255px); }
     .noticias article img {
       box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
       max-width: 100%; }
