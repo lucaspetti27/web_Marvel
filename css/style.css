@@ -4,7 +4,8 @@
   font-family: "Montserrat", sans-serif;
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: solid 1px red; }
 
 a {
   text-decoration: none;
@@ -83,12 +84,13 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 0px 120px 45px 120px; }
+    margin-bottom: 50px; }
     .segundaSeccion .contenedor-de-noticias .daily {
       display: flex;
       justify-content: center;
       margin-top: -100px; }
+      .segundaSeccion .contenedor-de-noticias .daily img {
+        max-width: 100%; }
     .segundaSeccion .contenedor-de-noticias .contenedorInterior {
       width: 80%;
       max-width: 1080px; }
@@ -167,22 +169,25 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.25rem; }
-  .noticias article img {
-    box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+  .noticias article {
     max-width: 100%; }
-  .noticias article h3 {
-    margin-top: 0.625rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    /*SemiBold*/
-    max-width: 100%;
-    color: black; }
+    .noticias article img {
+      box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+      max-width: 100%; }
+    .noticias article h3 {
+      margin-top: 0.625rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      /*SemiBold*/
+      max-width: 100%;
+      color: black; }
 
 footer {
   background: linear-gradient(#272727, #131313);
   height: 200px;
   width: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: white; }
@@ -442,6 +447,18 @@ footer {
       border: none; }
 
 /**************************PÁGINA ARTICULO NOTICIAS*****************************/
+@media (max-width: 1196px) {
+  footer {
+    justify-content: center;
+    color: white;
+    gap: 35px; }
+    footer .FooterCoder1 {
+      margin-left: 0;
+      align-items: center; }
+    footer .FooterCoder2 {
+      margin-right: 0;
+      gap: 30px; } }
+
 @media (max-width: 936px) {
   /****BARRA NAVEGADOR****/
   .nav-wraper .barNav #toggle:checked ~ .menu {
@@ -499,75 +516,77 @@ footer {
       margin: 0; }
   /****SECCION 1 INDEX****/
   /****SECCION 2 INDEX****/
-  .segundaSeccion .contenedor-de-noticias {
-    display: flex;
-    background-color: white;
-    width: 90%;
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 50px; }
-    .segundaSeccion .contenedor-de-noticias .daily img {
-      width: 635px; }
-    .segundaSeccion .contenedor-de-noticias .contenedorInterior {
+  .segundaSeccion {
+    max-width: 100%; }
+    .segundaSeccion .contenedor-de-noticias {
       display: flex;
-      align-items: center;
+      background-color: white;
+      width: 90%;
+      height: fit-content;
       flex-direction: column;
-      width: 80%; }
-      .segundaSeccion .contenedor-de-noticias .contenedorInterior h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        font-size: 1.75rem;
-        /*32px*/
-        font-weight: 600;
-        /*SemiBold*/
-        color: black;
-        text-decoration: underline;
+      align-items: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      padding: 0; }
+      .segundaSeccion .contenedor-de-noticias .daily img {
+        max-width: 100%; }
+      .segundaSeccion .contenedor-de-noticias .contenedorInterior {
         display: flex;
-        justify-content: center; }
-      .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        align-items: center; }
-        .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          max-width: 100%;
-          height: fit-content;
-          padding-bottom: 20%; }
-          .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article img {
-            box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
-            width: 500px;
-            aspect-ratio: 2/1;
-            object-fit: cover; }
-          .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article h3 {
-            margin-top: 0.625rem;
-            font-size: 1.125rem;
-            /*18px*/
-            font-weight: 600;
-            /*SemiBold*/
-            color: black;
-            width: 500px; }
-      .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex {
-        display: flex;
-        justify-content: end; }
-        .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button {
-          background-color: #CA0000;
-          color: white;
-          width: 7.9375rem;
-          height: 2.9375rem;
-          font-size: 1rem;
+        align-items: center;
+        flex-direction: column;
+        width: 80%; }
+        .segundaSeccion .contenedor-de-noticias .contenedorInterior h2 {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          font-size: 1.75rem;
+          /*32px*/
           font-weight: 600;
-          border: none;
-          margin-top: 30%;
-          margin-bottom: 30%; }
-          .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button a {
+          /*SemiBold*/
+          color: black;
+          text-decoration: underline;
+          display: flex;
+          justify-content: center; }
+        .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          align-items: center; }
+          .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            height: fit-content;
+            padding-bottom: 20%; }
+            .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article img {
+              box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+              height: 220px;
+              aspect-ratio: 2/1;
+              object-fit: cover; }
+            .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article h3 {
+              margin-top: 0.625rem;
+              font-size: 1.125rem;
+              /*18px*/
+              font-weight: 600;
+              /*SemiBold*/
+              color: black; }
+        .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex {
+          display: flex;
+          justify-content: end; }
+          .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button {
+            background-color: #CA0000;
+            color: white;
+            width: 7.9375rem;
+            height: 2.9375rem;
             font-size: 1rem;
             font-weight: 600;
-            color: white; }
+            border: none;
+            margin-top: 30%;
+            margin-bottom: 30%; }
+            .segundaSeccion .contenedor-de-noticias .contenedorInterior .botonNoticiasIndex button a {
+              font-size: 1rem;
+              font-weight: 600;
+              color: white; }
   /****SECCION 2 INDEX****/
   /****SECCION 3 INDEX****/
   .terceraSeccion {
@@ -717,11 +736,14 @@ footer {
         display: flex;
         justify-content: center; }
       .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article {
-        width: auto;
         height: fit-content;
-        padding-bottom: 10%; }
+        padding-bottom: 10%;
+        max-width: 100%; }
         .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article img {
-          width: fit-content; }
+          box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+          height: 140px;
+          aspect-ratio: 2/1;
+          object-fit: cover; }
         .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article h3 {
           margin-left: 10px;
           margin-right: 10px;
@@ -745,13 +767,13 @@ footer {
     display: flex;
     color: white;
     margin-left: 30px; }
-    .terceraSeccion .textoTerceraSeccion div h2 {
+    .terceraSeccion .textoTerceraSeccion h2 {
       font-size: 12px; }
-    .terceraSeccion .textoTerceraSeccion div h3 {
+    .terceraSeccion .textoTerceraSeccion h3 {
       font-size: 8px;
       font-weight: 400;
       margin-top: 6px; }
-    .terceraSeccion .textoTerceraSeccion div button {
+    .terceraSeccion .textoTerceraSeccion button {
       width: 70px;
       height: 25px;
       font-size: 8px;

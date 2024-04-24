@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.25rem;
     article{
+        max-width: 100%;
         img{
             box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
             max-width: 100%;

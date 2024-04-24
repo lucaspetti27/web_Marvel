@@ -35,11 +35,14 @@
         align-items: center;
         margin-top: 100px;
         margin-bottom: 50px;
-        padding: 0px 120px 45px 120px;
+        
         .daily{
             display: flex;
             justify-content: center;
             margin-top: -100px;
+            img{
+                max-width: 100%;
+            }
         }
         .contenedorInterior{
             width: 80%;
