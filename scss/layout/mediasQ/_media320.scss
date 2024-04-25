@@ -1,29 +1,34 @@
 @media (max-width: 320px){
 /****BARRA NAVEGADOR****/
-.barNav {
-    .logo{
-        img{
-            height: 25px;
+.nav-wraper{
+    .barNav {
+        margin: 20px 0 0 0;
+        .logo{
+            img{
+                height: 25px;
+            }
         }
-    }
-    #toggle:checked ~ .Navegador{
-        height: 100%;
-    }
-    label{
-        display: inline-flex;
-        cursor: pointer;
-    }
-    .Navegador {
-        overflow: hidden;
-        height: 0%;
-        width: 100%;
-
-        justify-content: center;
-        ul{
-            li{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+        #toggle:checked ~ .Navegador{
+            height: 100%;
+        }
+        label{
+            display: inline-flex;
+            cursor: pointer;
+        }
+        .material-icons{
+            font-size: 40px;
+        }
+        .Navegador {
+            overflow: hidden;
+            height: 0%;
+            width: 100%;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         }
     }
@@ -206,6 +211,10 @@
 /****PAGINA ARTICULO NOTICIAS****/
     .pNoticias{
         .contenedor-de-noticias-pagina{
+            .daily2{
+                width: 100%;
+                padding-top: 0;
+            }
             .contenedorArticuloNoticia{
                 width: 90%;
                 h1{
