@@ -90,6 +90,8 @@ a:hover {
       margin-top: -100px; }
       .segundaSeccion .contenedor-de-noticias .daily img {
         max-width: 100%; }
+    .segundaSeccion .contenedor-de-noticias .daily430 {
+      display: none; }
     .segundaSeccion .contenedor-de-noticias .contenedorInterior {
       width: 80%;
       max-width: 1080px; }
@@ -688,6 +690,13 @@ footer {
       padding: 16px 0 12px 0; }
       .nav-wraper .barNav .menu ul li a {
         font-size: 1rem; }
+  /**************************SEGUNDA SECCION*****************************/
+  .segundaSeccion .contenedor-de-noticias .daily {
+    display: none; }
+  .segundaSeccion .contenedor-de-noticias .daily430 {
+    display: inline-block; }
+    .segundaSeccion .contenedor-de-noticias .daily430 img {
+      max-width: 100%; }
   /**************************TERCERA SECCION*****************************/
   .terceraSeccion .textoTerceraSeccion {
     margin-left: 23px; }

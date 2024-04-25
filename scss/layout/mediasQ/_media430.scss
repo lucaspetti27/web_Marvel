@@ -29,7 +29,20 @@
         }
     }
 
-
+/**************************SEGUNDA SECCION*****************************/
+.segundaSeccion{
+    .contenedor-de-noticias{
+        .daily{
+            display: none;
+        }
+        .daily430{
+        display: inline-block;
+        img{
+            max-width: 100%;
+        }
+        }
+    }
+}
 
 /**************************TERCERA SECCION*****************************/
     .terceraSeccion{
