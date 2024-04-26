@@ -26,10 +26,12 @@ a:hover {
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 20px 0; }
+    margin: 20px 0 5px 0; }
     .nav-wraper .barNav .logo {
       display: flex;
       align-items: center; }
+      .nav-wraper .barNav .logo img {
+        width: 160px; }
     .nav-wraper .barNav #toggle, .nav-wraper .barNav label {
       display: none; }
     .nav-wraper .barNav .material-icons {
@@ -560,6 +562,7 @@ footer {
             height: fit-content;
             padding-bottom: 20%; }
             .segundaSeccion .contenedor-de-noticias .contenedorInterior .noticias article img {
+              max-width: 100%;
               box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
               height: 220px;
               aspect-ratio: 2/1;
