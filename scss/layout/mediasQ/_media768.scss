@@ -2,6 +2,7 @@
     /****BARRA NAVEGADOR****/
     .nav-wraper{
     .barNav {
+        margin: 20px 0 5px 0;
         #toggle:checked  ~ .menu{
             display: block;
             height: 100%;
