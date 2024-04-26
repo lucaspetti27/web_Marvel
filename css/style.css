@@ -506,7 +506,6 @@ footer {
   /****SECCION 1 INDEX****/
   .primera-seccion {
     display: flex;
-    background-image: url(../../../assets/fondoPrimeraSeccionIndex.png);
     background-size: cover;
     height: 900px;
     background-position: 10%;
@@ -693,6 +692,10 @@ footer {
       padding: 16px 0 12px 0; }
       .nav-wraper .barNav .menu ul li a {
         font-size: 1rem; }
+  /**************************PRIMERA SECCION*****************************/
+  .primera-seccion {
+    background-position: 26%; }
+  /**************************PRIMERA SECCION*****************************/
   /**************************SEGUNDA SECCION*****************************/
   .segundaSeccion .contenedor-de-noticias .daily {
     display: none; }
@@ -804,7 +807,6 @@ footer {
   /****SECCION 1 INDEX****/
   .primera-seccion {
     display: flex;
-    background-image: url(../../../assets/fondoPrimeraSeccionIndex.png);
     background-size: cover;
     height: 100%;
     background-position: 10%;
