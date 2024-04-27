@@ -1,0 +1,43 @@
+.gridInfoTarjetas{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    margin: 25px 0px 25px 0px;
+    .estructura{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 20px;
+        div{
+            img{
+                max-width: 100%;
+                box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+            }
+        }
+        .estructuraInformacion{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: 48px;
+                font-weight: 600; /*SemiBold*/
+            }
+            .estructuraInformacionDirector {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 200px;
+                font-size: 24px;
+                font-weight: 400;
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 20px;
+                }
+            }
+            h4{
+                margin-top: 20px;
+                font-weight: 600; /*SemiBold*/
+                font-size: 28px;
+            }
+        }
+    }
+}

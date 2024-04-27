@@ -56,6 +56,35 @@ main{
     
 }
 
+/****TARJETAS PAGINAS SERIES Y PELICULAS****/
+.gridInfoTarjetas{
+.estructura{
+    div{
+        img{
+            box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
+        }
+    }
+    .estructuraInformacion{
+        h3{
+            font-size: 36px;
+        }
+        .estructuraInformacionDirector {
+            gap: 25px;
+            p{
+                font-size: 20px;
+            }
+        }
+        h4{
+            margin-top: 20px;
+            font-weight: 600; /*SemiBold*/
+            font-size: 20px;
+        }
+    }
+}
+}
+/****TARJETAS PAGINAS SERIES Y PELICULAS****/
+
+
         }
 
 

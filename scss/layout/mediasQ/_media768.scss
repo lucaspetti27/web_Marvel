@@ -199,7 +199,57 @@ main{
     }
 
     /****PAGINA ARTICULO NOTICIA****/
-
+    
+    /****TARJETAS PAGINAS SERIES Y PELICULAS****/
+    .pPeliculas{
+        .contenedor-de-peliculas-pagina{
+            .contenedorInterior{
+                .botonesSuperiores{
+                    .botonPeliculas1{
+                        align-items: center;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        h1{
+                            font-size: 16px;
+                        }
+                    }
+                    .botonSeries1{
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        align-items: center;
+                        h2{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .gridInfoTarjetas{
+                    .estructura{
+                        div{
+                        }
+                        .estructuraInformacion{
+                            h3{
+                                font-size: 30px;
+                            }
+                            .estructuraInformacionDirector {
+                                gap: 25px;
+                                p{
+                                    font-size: 20px;
+                                }
+                            }
+                            h4{
+                                margin-top: 20px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    /****TARJETAS PAGINAS SERIES Y PELICULAS****/
 
     /****FOOTER****/
     footer{
