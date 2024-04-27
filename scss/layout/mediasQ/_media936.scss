@@ -32,11 +32,19 @@
         }
     }
 
+main{
+
 
     .pNoticias{
         .contenedor-de-noticias-pagina{
             .daily2{
-                padding-top: 11px;
+                display: none;
+            }
+            .daily936{
+                display: inline-block;
+                img{
+                    max-width: 100%;
+                }
             }
             .contenedorArticuloNoticia{
                 h2{
@@ -46,7 +54,7 @@
         }
     }
     
-
+}
 
         }
 

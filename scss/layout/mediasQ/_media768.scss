@@ -69,7 +69,6 @@
                 width:100%;
                 h2{
                     font-size: 1.75rem; /*32px*/
-                    justify-content:baseline;
                 }
             }
             
@@ -155,40 +154,22 @@
     /****SECCION 3 INDEX****/
 
     /****PAGINA NOTICIAS****/
+main{
     .pNoticias{
         .contenedor-de-noticias-pagina{
-            .daily2 img {
-                width: 635px;
-            }
             .subContenedorNoticias{
-                justify-content: center;
-                .noticias-pagina1{
-                    grid-template-columns: 1fr;
+                gap: 1.5rem;
+                .articulosPNoticias{
                     article {
-                        height: auto;
-                        width: fit-content;
-                        img{
-                            width: 500px;
-                            aspect-ratio: 2/1;
-                            object-fit: cover;
-                        }
-                    }
-                }
-                .noticias-pagina2{
-                    grid-template-columns: 1fr;
-                    article {
-                        height: auto;
-                        width: fit-content;
-                        img{
-                            width: 500px;
-                            aspect-ratio: 2/1;
-                            object-fit: cover;
+                        h2{
+                            font-size: 14px; 
                         }
                     }
                 }
             }
         }
     }
+}
 
 
     /****PAGINA NOTICIAS****/
