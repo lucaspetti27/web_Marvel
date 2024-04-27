@@ -342,7 +342,8 @@ main .pNoticias {
     display: flex;
     justify-content: center; }
     .pSeries .contenedor-de-series-pagina .contenedorInterior {
-      width: 80%; }
+      max-width: 1526px;
+      padding-inline: 5%; }
       .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores {
         display: flex;
         gap: 1.25rem;
@@ -367,77 +368,60 @@ main .pNoticias {
           justify-content: center;
           padding-top: 50px;
           padding-bottom: 50px; }
-      .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        align-items: center;
-        gap: 35px;
-        margin: 25px 0px 25px 0px; }
-        .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie {
-          display: flex;
-          gap: 20px; }
-          .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie div img {
-            box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258); }
-          .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie .estructuraInformacion {
-            display: flex;
-            flex-direction: column; }
-            .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie .estructuraInformacion h3 {
-              font-size: 48px;
-              font-weight: 600;
-              /*SemiBold*/ }
-            .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie .estructuraInformacion .estructuraInformacionDirector {
-              display: flex;
-              gap: 200px;
-              font-size: 24px;
-              font-weight: 400; }
-              .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie .estructuraInformacion .estructuraInformacionDirector p {
-                font-size: 24px;
-                font-weight: 400;
-                margin-top: 20px; }
-            .pSeries .contenedor-de-series-pagina .contenedorInterior .seriesInfo .estructuraSerie .estructuraInformacion h4 {
-              margin-top: 20px;
-              font-weight: 600;
-              /*SemiBold*/
-              font-size: 28px; }
 
 /**************************PÁGINA ARTICULO NOTICIAS*****************************/
-.pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia {
-  width: 70%; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia h1 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    /*SemiBold*/
-    color: #CA0000;
-    margin-top: 18px;
-    text-decoration: underline; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    /*SemiBold*/
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .desarrolloNoticia {
-    margin-top: 60px;
-    margin-bottom: 60px; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .desarrolloNoticia p {
-      font-size: 20px;
-      font-weight: 400;
-      /*Regular*/
-      margin-top: 20px;
-      margin-bottom: 20px; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias {
+.pArticuloNoticias {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 84px; }
+  .pArticuloNoticias .contenedorDeArticuloNoticias {
+    background-color: white;
+    width: 90%;
     display: flex;
-    justify-content: end; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias a:hover {
-      box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
-      cursor: pointer; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias a button {
-      background-color: #CA0000;
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 10px;
-      border: none; }
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px; }
+    .pArticuloNoticias .contenedorDeArticuloNoticias .daily3 img {
+      max-width: 100%; }
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia {
+      width: 70%; }
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia h1 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        /*SemiBold*/
+        color: #CA0000;
+        margin-top: 18px;
+        text-decoration: underline; }
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        /*SemiBold*/
+        padding-top: 20px;
+        padding-bottom: 20px; }
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .desarrolloNoticia {
+        margin-top: 60px;
+        margin-bottom: 60px; }
+        .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .desarrolloNoticia p {
+          font-size: 20px;
+          font-weight: 400;
+          /*Regular*/
+          margin-top: 20px;
+          margin-bottom: 20px; }
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias {
+        display: flex;
+        justify-content: end; }
+        .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias a:hover {
+          box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.637);
+          cursor: pointer; }
+        .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias a button {
+          background-color: #CA0000;
+          color: white;
+          font-size: 1rem;
+          font-weight: 600;
+          padding: 10px;
+          border: none; }
 
 /**************************PÁGINA ARTICULO NOTICIAS*****************************/
 @media (max-width: 1196px) {
@@ -620,17 +604,17 @@ main .pNoticias {
       font-size: 14px; }
   /****PAGINA NOTICIAS****/
   /****PAGINA ARTICULO NOTICIA****/
-  .pNoticias .contenedor-de-noticias-pagina .daily2 img {
+  .pArticuloNoticias .contenedorDeArticuloNoticias .daily2 img {
     width: 100%; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia {
+  .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia {
     width: 90%; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia h2 {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia h2 {
       font-size: 24px;
       font-weight: 600;
       /*SemiBold*/
       padding-top: 10px;
       padding-bottom: 20px; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias {
       display: flex;
       justify-content: center; }
   /****PAGINA ARTICULO NOTICIA****/
@@ -654,6 +638,27 @@ main .pNoticias {
     .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion .estructuraInformacionDirector p {
       font-size: 20px; }
   .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion h4 {
+    margin-top: 20px;
+    font-size: 20px; }
+  .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonPeliculas2 {
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonPeliculas2 h1 {
+      font-size: 16px; }
+  .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonSeries2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonSeries2 h2 {
+      font-size: 16px; }
+  .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion h3 {
+    font-size: 30px; }
+  .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion .estructuraInformacionDirector {
+    gap: 25px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion .estructuraInformacionDirector p {
+      font-size: 20px; }
+  .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion h4 {
     margin-top: 20px;
     font-size: 20px; }
   /****TARJETAS PAGINAS SERIES Y PELICULAS****/
@@ -907,33 +912,34 @@ main .pNoticias {
           font-size: 10px; }
   /****PAGINA NOTICIAS****/
   /****PAGINA ARTICULO NOTICIAS****/
-  .pNoticias .contenedor-de-noticias-pagina .daily2 {
+  .pArticuloNoticias .contenedorDeArticuloNoticias .daily3 {
     width: 100%;
     padding-top: 0; }
-  .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia {
+  .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia {
     width: 90%; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia h1 {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia h1 {
       font-size: 14px; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia h2 {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia h2 {
       font-size: 18px;
       padding-bottom: 10px; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .desarrolloNoticia {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .desarrolloNoticia {
       margin-top: 20px;
       margin-bottom: 30px; }
-      .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .desarrolloNoticia p {
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .desarrolloNoticia p {
         font-size: 10px;
         margin-top: 10px;
         margin-bottom: 10px; }
-    .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias {
+    .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias {
       display: flex;
       justify-content: center; }
-      .pNoticias .contenedor-de-noticias-pagina .contenedorArticuloNoticia .botonVolverNoticias a button {
+      .pArticuloNoticias .contenedorDeArticuloNoticias .contenedorArticuloNoticia .botonVolverNoticias a button {
         font-size: 10px;
         font-weight: 600;
         padding: 10px;
         border: none; }
   /****PAGINA ARTICULO NOTICIAS****/
   /****TARJETAS PAGINAS SERIES Y PELICULAS****/
+  /****PELICULAS****/
   .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior {
     padding-inline: 10px; }
     .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior .botonesSuperiores {
@@ -963,6 +969,38 @@ main .pNoticias {
       font-size: 10px; }
     .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion div p {
       font-size: 8px; }
+  /****PELICULAS****/
+  /****SERIES****/
+  .pSeries .contenedor-de-series-pagina .contenedorInterior {
+    padding-inline: 10px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores {
+      margin-top: 5px; }
+      .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonPeliculas2 {
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid #CA0000; }
+        .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonPeliculas2 h1 {
+          font-size: 10px; }
+      .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonSeries2 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        align-items: center; }
+        .pSeries .contenedor-de-series-pagina .contenedorInterior .botonesSuperiores .botonSeries2 h2 {
+          font-size: 10px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion h3 {
+      font-size: 14px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion .estructuraInformacionDirector {
+      gap: 5px; }
+      .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion .estructuraInformacionDirector p {
+        margin-top: 0px;
+        font-size: 8px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion h4 {
+      margin-top: 5px;
+      font-size: 10px; }
+    .pSeries .contenedor-de-series-pagina .contenedorInterior .gridInfoTarjetas .estructura .estructuraInformacion div p {
+      font-size: 8px; }
+  /****SERIES****/
   /****FOOTER****/
   footer {
     gap: 4px; }

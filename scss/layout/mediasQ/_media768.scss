@@ -175,8 +175,8 @@ main{
     /****PAGINA NOTICIAS****/
 
     /****PAGINA ARTICULO NOTICIA****/
-    .pNoticias{
-        .contenedor-de-noticias-pagina{
+    .pArticuloNoticias{
+        .contenedorDeArticuloNoticias{
             .daily2{
                 img{
                     width: 100%;
@@ -214,6 +214,54 @@ main{
                         }
                     }
                     .botonSeries1{
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        align-items: center;
+                        h2{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .gridInfoTarjetas{
+                    .estructura{
+                        .estructuraInformacion{
+                            h3{
+                                font-size: 30px;
+                            }
+                            .estructuraInformacionDirector {
+                                gap: 25px;
+                                p{
+                                    font-size: 20px;
+                                }
+                            }
+                            h4{
+                                margin-top: 20px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .pSeries{
+        .contenedor-de-series-pagina{
+            .contenedorInterior{
+                .botonesSuperiores{
+                    .botonPeliculas2{
+                        align-items: center;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        h1{
+                            font-size: 16px;
+                        }
+                    }
+                    .botonSeries2{
                         padding-top: 0px;
                         padding-bottom: 0px;
                         align-items: center;

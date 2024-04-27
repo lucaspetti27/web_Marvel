@@ -1,6 +1,22 @@
 /**************************PÁGINA ARTICULO NOTICIAS*****************************/
-.pNoticias{
-    .contenedor-de-noticias-pagina{
+.pArticuloNoticias{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 84px;
+    .contenedorDeArticuloNoticias{  
+        background-color: white;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 60px;
+        .daily3{
+            img{
+                max-width: 100%;
+            }
+        }
         .contenedorArticuloNoticia{
             width: 70%;
             h1{

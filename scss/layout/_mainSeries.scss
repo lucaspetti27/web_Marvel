@@ -1,83 +1,44 @@
-.pSeries{
+.pSeries {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 4.375rem;
+    .contenedor-de-series-pagina {
+        background-color: white;
+        width: 90%;
         display: flex;
         justify-content: center;
-        padding-top: 4.375rem;
-        .contenedor-de-series-pagina {
-            background-color: white;
-            width: 90%;
-            display: flex;
-            justify-content: center;
-            .contenedorInterior {
-                width:80%;
-                .botonesSuperiores{
+        .contenedorInterior {
+            max-width: 1526px;
+            padding-inline: 5%;
+            .botonesSuperiores {
+                display: flex;
+                gap: 1.25rem;
+                justify-content: center;
+                margin-top: 40px;
+                .botonPeliculas2 {
+                    background-color: white;
+                    width: 50%;
+                    color: #CA0000;
+                    border: 5px solid #CA0000;
                     display: flex;
-                    gap: 1.25rem;
                     justify-content: center;
-                    margin-top: 40px;
-                    .botonPeliculas2{
-                        background-color:white;
-                        width: 50%;
-                        color: #CA0000;
-                        border: 5px solid #CA0000;
-                        display: flex;
-                        justify-content: center;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
-                        h1{
-                            font-size: 24px;
-                        }
-                    }
-                    .botonSeries2{
-                        background-color: #CA0000;
-                        width: 50%;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    h1 {
+                        font-size: 24px;
                     }
                 }
-                .seriesInfo{
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    align-items: center;
-                    gap: 35px;
-                    margin: 25px 0px 25px 0px;
-                    .estructuraSerie{
-                        display: flex;
-                        gap: 20px;
-                        div{
-                            img{
-                                box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
-                            }
-                        }
-                        .estructuraInformacion{
-                            display: flex;
-                            flex-direction: column;
-                            h3{
-                                font-size: 48px;
-                                font-weight: 600; /*SemiBold*/
-                            }
-                            .estructuraInformacionDirector {
-                                display: flex;
-                                gap: 200px;
-                                font-size: 24px;
-                                font-weight: 400;
-                                p{
-                                    font-size: 24px;
-                                    font-weight: 400;
-                                    margin-top: 20px;
-                                }
-                            }
-                            h4{
-                                margin-top: 20px;
-                                font-weight: 600; /*SemiBold*/
-                                font-size: 28px;
-                            }
-                        }
-                    }
+                .botonSeries2 {
+                    background-color: #CA0000;
+                    width: 50%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
                 }
             }
         }
     }
+}

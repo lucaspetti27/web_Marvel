@@ -171,9 +171,9 @@ main{
 /****PAGINA NOTICIAS****/
 
 /****PAGINA ARTICULO NOTICIAS****/
-    .pNoticias{
-        .contenedor-de-noticias-pagina{
-            .daily2{
+    .pArticuloNoticias{
+        .contenedorDeArticuloNoticias{
+            .daily3{
                 width: 100%;
                 padding-top: 0;
             }
@@ -215,6 +215,7 @@ main{
 /****PAGINA ARTICULO NOTICIAS****/
 
 /****TARJETAS PAGINAS SERIES Y PELICULAS****/
+/****PELICULAS****/
     .pPeliculas{
         .contenedor-de-peliculas-pagina{
             .contenedorInterior{
@@ -267,6 +268,67 @@ main{
             }
         }
     }
+    /****PELICULAS****/
+
+
+
+    /****SERIES****/
+    .pSeries{
+        .contenedor-de-series-pagina{
+            .contenedorInterior{
+                padding-inline: 10px;
+                .botonesSuperiores{
+                    margin-top: 5px;
+                    .botonPeliculas2{
+                        align-items: center;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border: 2px solid #CA0000;
+                        h1{
+                            font-size: 10px;
+                        }
+                    }
+                    .botonSeries2{
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        align-items: center;
+                        h2{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .gridInfoTarjetas{
+                    .estructura{
+                        .estructuraInformacion{
+                            h3{
+                                font-size: 14px;
+                            }
+                            .estructuraInformacionDirector {
+                                gap: 5px;
+                                p{
+                                    margin-top: 0px;
+                                    font-size: 8px;
+                                }
+                            }
+                            h4{
+                                margin-top: 5px;
+                                font-size: 10px;
+                            }
+                            div{
+                                p{
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/****SERIES****/
+
+
 
 /****FOOTER****/
 footer {
