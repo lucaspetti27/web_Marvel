@@ -1,44 +1,44 @@
-.pPeliculas{
+.pPeliculas {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 4.375rem;
+    .contenedor-de-peliculas-pagina {
+        background-color: white;
+        width: 90%;
         display: flex;
         justify-content: center;
-        padding-top: 4.375rem;
-        .contenedor-de-peliculas-pagina {
-            background-color: white;
-            width: 90%;
-            display: flex;
-            justify-content: center;
-            .contenedorInterior {
-                max-width: 1526px;
-                padding-inline: 50px;
-                .botonesSuperiores{
+        .contenedorInterior {
+            max-width: 1526px;
+            padding-inline: 5%;
+            .botonesSuperiores {
+                display: flex;
+                gap: 1.25rem;
+                justify-content: center;
+                margin-top: 40px;
+                .botonPeliculas1 {
+                    background-color: #CA0000;
+                    width: 50%;
+                    color: white;
                     display: flex;
-                    gap: 1.25rem;
                     justify-content: center;
-                    margin-top: 40px;
-                    .botonPeliculas1{
-                        background-color: #CA0000;
-                        width: 50%;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
-                        h1{
-                            font-size: 24px;
-                        }
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    h1 {
+                        font-size: 24px;
                     }
-                    .botonSeries1{
-                        background-color:white;
-                        width: 50%;
-                        color: #CA0000;
-                        border: 5px solid #CA0000;
-                        display: flex;
-                        justify-content: center;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
-                    }
+                }
+                .botonSeries1 {
+                    background-color: white;
+                    width: 50%;
+                    color: #CA0000;
+                    border: 5px solid #CA0000;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
                 }
             }
         }
     }
+}

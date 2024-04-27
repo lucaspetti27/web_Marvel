@@ -305,7 +305,7 @@ main .pNoticias {
     justify-content: center; }
     .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior {
       max-width: 1526px;
-      padding-inline: 50px; }
+      padding-inline: 5%; }
       .pPeliculas .contenedor-de-peliculas-pagina .contenedorInterior .botonesSuperiores {
         display: flex;
         gap: 1.25rem;
