@@ -1,12 +1,11 @@
 @media (max-width: 320px){
-main{
 /****BARRA NAVEGADOR****/
 .nav-wraper{
     .barNav {
         margin: 20px 0 0 0;
         .logo{
             img{
-                height: 25px;
+                width: 100px;
             }
         }
         #toggle:checked ~ .Navegador{
@@ -17,7 +16,7 @@ main{
             cursor: pointer;
         }
         .material-icons{
-            font-size: 40px;
+            font-size: 30px;
         }
         .Navegador {
             overflow: hidden;
@@ -38,6 +37,7 @@ main{
 /****BARRA NAVEGADOR****/
 
 /****SECCION 1 INDEX****/
+main{
 .primera-seccion {
     display: flex;
     background-size: cover;
@@ -126,7 +126,7 @@ main{
 }
 
 /****SECCION 3 INDEX****/
-
+}
 /****PAGINA NOTICIAS****/
     .pNoticias{
         .contenedor-de-noticias-pagina{
@@ -217,23 +217,25 @@ main{
 
 /****PAGINA ARTICULO NOTICIAS****/
 
+
+
 /****FOOTER****/
-footer{
+footer {
+    gap:8px;
     .FooterCoder1{
-        font-size: 12px;
-        padding: 15px;
-    }
-    .FooterCoder2{
-        font-size: 12px;
-        gap: 5px;
-        img{
-            width: 130px;
-            padding-bottom: 15px;
+        h3{
+            font-size: 12px;
         }
     }
+    .FooterCoder2{
+        h3{
+            font-size: 12px;
+        }
+        img{
+            width: 150px;
+        }
+        
+    }
 }
-
 /****FOOTER****/
-
-}
 }
