@@ -47,19 +47,15 @@
 
     /****SECCION 2 INDEX****/
     .segundaSeccion{
-        max-width: 100%;
     .contenedor-de-noticias {
-        display: flex;
-        background-color: white;
-        width: 90%;
-        min-width: fit-content;
-        height: fit-content;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        padding: 0;
+        min-width:auto;
+        margin:50px 0 50px 0;
         .daily {
+            display: none;
+            
+        }
+        .daily430{
+            display: inline-block;
             img{
                 max-width: 100%;;
             }
@@ -69,34 +65,28 @@
             align-items: center;
             flex-direction: column;
             width: 80%;
-            h2{
-                margin-top: 30px;
-                margin-bottom: 20px;
-                font-size: 1.75rem; /*32px*/
-                font-weight: 600; /*SemiBold*/
-                color: black;
-                text-decoration: underline;
-                display: flex;
-                justify-content: center;
+            div{
+                width:100%;
+                h2{
+                    font-size: 1.75rem; /*32px*/
+                    justify-content:baseline;
+                }
             }
+            
             .noticias{
                 display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                align-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr ;
                 article{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     max-width: 100%;
                     height: fit-content;
-                    padding-bottom:20%;
+                    
                     img{
                         max-width: 100%;
                         width: 100%;
                         box-shadow: 0px 5px 7.8px rgba(0, 0, 0, 0.258);
-                        height: 250px;
-                        aspect-ratio: 2/1;
                         object-fit: cover;
                     }
                     h3{
@@ -118,8 +108,8 @@
                     font-size: 1rem;
                     font-weight: 600;
                     border: none;
-                    margin-top: 30%;
-                    margin-bottom: 30%;
+                    margin-top: 0%;
+                    margin-bottom: 0%;
                     a {
                         font-size: 1rem;
                         font-weight: 600;
