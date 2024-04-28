@@ -8,9 +8,7 @@ main{
         .contenedor-de-noticias-pagina {
             background-color: white;
             width: 90%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @include flex (column, center);
             padding-bottom: 60px;
             .daily2 {
                 display: flex;
@@ -31,7 +29,7 @@ main{
                 gap: 2.5rem;
                 h1{
                     font-size: 2rem; /*32px*/
-                    font-weight: 600; /*SemiBold*/
+                    font-weight: map-get($fuente, semiBold);
                     color: black;
                     text-decoration: underline;
                 }

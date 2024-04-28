@@ -10,5 +10,5 @@ a{
     color: black;
 }
 a:hover{
-    font-weight: bold;
+    font-weight: map-get($fuente, bold );
 }
